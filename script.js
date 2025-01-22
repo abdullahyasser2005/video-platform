@@ -5,7 +5,7 @@ const videoSection = document.getElementById("videoSection");
 
 // قائمة الإيميلات المسموح لها
 const allowedEmails = [
-  "user1@example.com",
+  "abdullahyasser12005@gmail.com",
   "user2@example.com"
 ];
 
