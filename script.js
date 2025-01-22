@@ -1,24 +1,21 @@
-const loginForm = document.getElementById("loginForm");
-const emailInput = document.getElementById("emailInput");
-const loginSection = document.getElementById("loginSection");
-const videoSection = document.getElementById("videoSection");
-
-// قائمة الإيميلات المسموح لها
 const allowedEmails = [
-  "abdullahyasser12005@gmail.com",
-  "user2@example.com"
+  "abdullahyasser12005@gmail.com" // الإيميل المسموح به
 ];
 
-// تحقق من الإيميل المدخل
-loginForm.addEventListener("submit", function (e) {
-  e.preventDefault();
-  
-  const email = emailInput.value;
+const loginForm = document.getElementById("loginForm");
+const videoSection = document.getElementById("videoSection");
+const loginSection = document.getElementById("loginSection");
+const videoPlayer = document.getElementById("videoPlayer");
+
+loginForm.addEventListener("submit", function(event) {
+  event.preventDefault();
+
+  const email = document.getElementById("emailInput").value;
 
   // التحقق من الإيميل
   if (allowedEmails.includes(email)) {
-    loginSection.style.display = "none"; // إخفاء قسم تسجيل الدخول
-    videoSection.style.display = "block"; // إظهار قسم الفيديو
+    loginSection.style.display = "none"; // إخفاء صفحة تسجيل الدخول
+    videoSection.style.display = "block"; // عرض الفيديو
   } else {
     alert("Access Denied! Email not authorized.");
   }
