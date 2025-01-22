@@ -7,11 +7,6 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- لوجو الموقع -->
-  <header>
-    <img src="logo.png" alt="EHub Logo" class="logo">
-  </header>
-
   <!-- قسم تسجيل الدخول -->
   <div id="loginSection">
     <h2>Login to Access the Video</h2>
@@ -20,25 +15,11 @@
       <button type="submit">Login</button>
     </form>
   </div>
-
+  
   <!-- قسم الفيديو (مخفي في البداية) -->
   <div id="videoSection" style="display: none;">
     <h2>Welcome! Enjoy the Video</h2>
-    <div class="video-wrapper">
-      <video id="video-player" controls>
-        <source id="video-source" src="your-video.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-      <div id="watermark">EHub User</div>
-    </div>
-    <div class="video-controls">
-      <label for="quality">Choose Video Quality:</label>
-      <select id="quality">
-        <option value="360p">360p</option>
-        <option value="720p">720p</option>
-        <option value="1080p">1080p</option>
-      </select>
-    </div>
+    <iframe src="https://drive.google.com/file/d/13303YgWtaw4iuyGfrc7XeBzvoIJaL2vN/preview" width="640" height="480" allow="autoplay" frameborder="0"></iframe>
   </div>
 
   <script src="script.js"></script>
