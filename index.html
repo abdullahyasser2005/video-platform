@@ -7,31 +7,22 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div id="login-container">
-    <h2>Login to Access Videos</h2>
-    <form id="login-form">
-      <input type="email" id="email" placeholder="Enter your email" required>
+  <!-- قسم تسجيل الدخول -->
+  <div id="loginSection">
+    <h2>Login to Access the Video</h2>
+    <form id="loginForm">
+      <input type="email" id="emailInput" placeholder="Enter your email" required>
       <button type="submit">Login</button>
     </form>
   </div>
 
-  <div id="video-container" class="hidden">
-    <h2>Welcome!</h2>
-    <div class="video-wrapper">
-      <video id="video-player" controls>
-        <source id="video-source" src="" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-      <div id="watermark"></div>
-    </div>
-    <div>
-      <label for="quality">Choose Quality:</label>
-      <select id="quality">
-        <option value="360p">360p</option>
-        <option value="720p">720p</option>
-        <option value="1080p">1080p</option>
-      </select>
-    </div>
+  <!-- قسم الفيديو (مخفي في البداية) -->
+  <div id="videoSection" style="display: none;">
+    <h2>Welcome! Enjoy the Video</h2>
+    <video controls>
+      <source src="your-video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
   </div>
 
   <script src="script.js"></script>
