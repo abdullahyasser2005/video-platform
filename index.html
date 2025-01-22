@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video Platform</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="login-container">
+    <h2>Login to Access Videos</h2>
+    <form id="login-form">
+      <input type="email" id="email" placeholder="Enter your email" required>
+      <button type="submit">Login</button>
+    </form>
+  </div>
+
+  <div id="video-container" class="hidden">
+    <h2>Welcome!</h2>
+    <div class="video-wrapper">
+      <video id="video-player" controls>
+        <source id="video-source" src="" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div id="watermark"></div>
+    </div>
+    <div>
+      <label for="quality">Choose Quality:</label>
+      <select id="quality">
+        <option value="360p">360p</option>
+        <option value="720p">720p</option>
+        <option value="1080p">1080p</option>
+      </select>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
