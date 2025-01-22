@@ -1,8 +1,33 @@
+/* تصميم الصفحة */
 body {
   font-family: Arial, sans-serif;
   text-align: center;
   margin: 0;
   background: #f0f0f0;
+}
+
+header {
+  background: #333;
+  padding: 10px 0;
+}
+
+.logo {
+  width: 150px;
+  animation: logoAnimation 2s ease-in-out infinite;
+}
+
+@keyframes logoAnimation {
+  0% { transform: rotate(0deg); }
+  50% { transform: rotate(360deg); }
+  100% { transform: rotate(0deg); }
+}
+
+#loginSection {
+  margin-top: 50px;
+}
+
+#videoSection {
+  margin-top: 30px;
 }
 
 .hidden {
@@ -18,6 +43,7 @@ body {
   width: 80%;
   border: 2px solid #ccc;
   border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 #watermark {
@@ -29,4 +55,19 @@ body {
   background: rgba(0, 0, 0, 0.5);
   padding: 5px;
   border-radius: 3px;
+  animation: watermarkAnimation 5s ease-in-out infinite;
+}
+
+@keyframes watermarkAnimation {
+  0% { top: 10px; left: 10px; }
+  50% { top: 50px; left: 50px; }
+  100% { top: 10px; left: 10px; }
+}
+
+.video-controls {
+  margin-top: 15px;
+}
+
+#quality {
+  padding: 5px;
 }
